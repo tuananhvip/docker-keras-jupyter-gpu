@@ -21,5 +21,5 @@ WORKDIR "/notebooks"
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 
-ADD environment.yml /environment.yml
+ADD https://github.com/tuananhvip/docker-keras-jupyter-gpu/raw/master/environment.yml /environment.yml
 RUN conda env update -f /environment.yml
