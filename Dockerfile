@@ -1,4 +1,5 @@
-FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04     #9.1-cudnn7-devel-ubuntu16.04 #8.0-cudnn5-devel  #9.2-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04     
+#9.1-cudnn7-devel-ubuntu16.04 #8.0-cudnn5-devel  #9.2-cudnn7-devel-ubuntu18.04
 
 MAINTAINER Nobody
 
