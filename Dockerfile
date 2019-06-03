@@ -19,7 +19,11 @@ EXPOSE 8888 6006
 VOLUME /notebooks
 WORKDIR "/notebooks"
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
+CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --NotebookApp.allow_origin='*'
+# CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 
-ADD https://github.com/tuananhvip/docker-keras-jupyter-gpu/raw/master/environment.yml /environment.yml
-RUN conda env update -f /environment.yml
+# docker run --rm -it -v $(pwd):/src tuananhktmt/keras-jupyter
+
+
+# ADD https://github.com/tuananhvip/docker-keras-jupyter-gpu/raw/master/environment.yml /environment.yml
+# RUN conda env update -f /environment.yml
